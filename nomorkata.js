@@ -3,7 +3,8 @@ function nomorKata(n) {
   let nomor = n.toString();
   let result = null;
   let nLength = nomor.length;
-
+  let nSplit = nomor.split('');
+  let words = []
 
   const keSembilanBelas = [
     'nol',
@@ -42,7 +43,13 @@ function nomorKata(n) {
     result = keSembilanBelas[n]
   }
 
+  for (const nWord of nomor) {
+    
+    words.push(keSembilanBelas[nWord])
+    result = words;
+  }
+
   return result;
 }
 
-console.log(nomorKata(20))
+console.log(nomorKata(1234))
