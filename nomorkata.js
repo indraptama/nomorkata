@@ -43,13 +43,20 @@ function nomorKata(n) {
     result = keSembilanBelas[n]
   }
 
-  for (const nWord of nomor) {
-    
-    words.push(keSembilanBelas[nWord])
-    result = words;
+  // create Arry for reversing Word
+
+  for (const singleWord of nSplit) {
+    words.push(keSembilanBelas[singleWord])
   }
+
+  let resultRev = words.reverse();
+  resultRev.splice()
+
+  result
+
+
 
   return result;
 }
 
-console.log(nomorKata(1234))
+console.log(nomorKata('1234567890'))
