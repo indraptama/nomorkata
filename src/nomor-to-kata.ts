@@ -61,7 +61,7 @@ export function nomorToKata(inputNum: number) {
     }
   }
 
-  // Koma
+  // Koma still not work
   if(numIndex !== numString.length) {
     let newNumberIndex = numString.length;
     result += 'koma '
