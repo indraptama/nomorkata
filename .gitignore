@@ -1,5 +1,4 @@
-.node_modules
-.cache
-.dist
-.vscode
-/dist
+.build
+build
+web_modules
+node_modules
