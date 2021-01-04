@@ -62,10 +62,10 @@ export function nomorToKata(inputNum: number) {
   }
 
   // Koma still not work
-  if(numIndex !== numString.length) {
+  if (numIndex !== numString.length) {
     let newNumberIndex = numString.length;
     result += 'koma '
-    for (let i = numIndex+1; i < newNumberIndex; i++) {
+    for (let i = numIndex + 1; i < newNumberIndex; i++) {
       result += satuan[numberArray[i]] + ' ';
     }
   }
@@ -73,4 +73,4 @@ export function nomorToKata(inputNum: number) {
   return result.replace(/\s+/g, ' ').replace("satu ratus", "seratus").replace("satu ribu", "seribu").replace("satu puluh", "sepuluh");
 }
 
-export default nomorToKata
+export default nomorToKata;

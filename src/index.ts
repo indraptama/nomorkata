@@ -5,3 +5,12 @@
 
 import nomorToKata from './nomor-to-kata';
 console.log(nomorToKata(25870.524));
+
+const theInput = document.getElementById('inputNumber');
+const theButton = document.getElementById('btn');
+const theContainer = document.getElementById('result');
+theButton.addEventListener("click", (e) => {
+  let test = parseFloat(theInput.value);
+  
+  theContainer.innerHTML = nomorToKata(test);
+}, false);
